@@ -1,0 +1,10 @@
+^C:\USERS\LUPPU\DOCUMENTS\C_CODING\RESTARTING_CPP\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/luppu/Documents/C_Coding/Restarting_Cpp -BC:/Users/luppu/Documents/C_Coding/Restarting_Cpp/build --check-stamp-file C:/Users/luppu/Documents/C_Coding/Restarting_Cpp/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

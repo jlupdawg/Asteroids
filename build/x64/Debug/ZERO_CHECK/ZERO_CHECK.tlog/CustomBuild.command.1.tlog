@@ -1,0 +1,10 @@
+^C:\USERS\LUPPU\DOCUMENTS\C_CODING\RESTARTING_CPP\BUILD\CMAKEFILES\E33F3D6795361DD5DDEBF7F3C5200384\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/luppu/Documents/C_Coding/Restarting_Cpp -BC:/Users/luppu/Documents/C_Coding/Restarting_Cpp/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/luppu/Documents/C_Coding/Restarting_Cpp/build/ArrowCanvas.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
